@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D80244B91DD7BBEA00D9EE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244B81DD7BBEA00D9EE58 /* AppDelegate.swift */; };
-		D80244BB1DD7BBEA00D9EE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244BA1DD7BBEA00D9EE58 /* ViewController.swift */; };
+		D80244BB1DD7BBEA00D9EE58 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244BA1DD7BBEA00D9EE58 /* MainViewController.swift */; };
 		D80244BE1DD7BBEA00D9EE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80244BC1DD7BBEA00D9EE58 /* Main.storyboard */; };
 		D80244C01DD7BBEA00D9EE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80244BF1DD7BBEA00D9EE58 /* Assets.xcassets */; };
 		D80244CB1DD7BBEA00D9EE58 /* TVBuildMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244CA1DD7BBEA00D9EE58 /* TVBuildMonitorTests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		D80244B51DD7BBEA00D9EE58 /* TVBuildMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVBuildMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80244B81DD7BBEA00D9EE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D80244BA1DD7BBEA00D9EE58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D80244BA1DD7BBEA00D9EE58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D80244BD1DD7BBEA00D9EE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D80244BF1DD7BBEA00D9EE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80244C11DD7BBEA00D9EE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D80244B81DD7BBEA00D9EE58 /* AppDelegate.swift */,
-				D80244BA1DD7BBEA00D9EE58 /* ViewController.swift */,
+				D80244BA1DD7BBEA00D9EE58 /* MainViewController.swift */,
 				D80244BC1DD7BBEA00D9EE58 /* Main.storyboard */,
 				D80244BF1DD7BBEA00D9EE58 /* Assets.xcassets */,
 				D80244C11DD7BBEA00D9EE58 /* Info.plist */,
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80244BB1DD7BBEA00D9EE58 /* ViewController.swift in Sources */,
+				D80244BB1DD7BBEA00D9EE58 /* MainViewController.swift in Sources */,
 				D80244B91DD7BBEA00D9EE58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +493,7 @@
 				D80244DC1DD7BBEA00D9EE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D80244DD1DD7BBEA00D9EE58 /* Build configuration list for PBXNativeTarget "TVBuildMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +502,7 @@
 				D80244DF1DD7BBEA00D9EE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D80244E01DD7BBEA00D9EE58 /* Build configuration list for PBXNativeTarget "TVBuildMonitorUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +511,7 @@
 				D80244E21DD7BBEA00D9EE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
