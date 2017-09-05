@@ -13,6 +13,8 @@
 		D80244C01DD7BBEA00D9EE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80244BF1DD7BBEA00D9EE58 /* Assets.xcassets */; };
 		D80244CB1DD7BBEA00D9EE58 /* TVBuildMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244CA1DD7BBEA00D9EE58 /* TVBuildMonitorTests.swift */; };
 		D80244D61DD7BBEA00D9EE58 /* TVBuildMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80244D51DD7BBEA00D9EE58 /* TVBuildMonitorUITests.swift */; };
+		D898C2D01F59F35400238C40 /* CircleAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D898C2CF1F59F35400238C40 /* CircleAPITests.swift */; };
+		D8B4D98F1F50D908001ED030 /* CircleCIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4D98E1F50D908001ED030 /* CircleCIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,13 @@
 			remoteInfo = TVBuildMonitor;
 		};
 		D80244D21DD7BBEA00D9EE58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80244AD1DD7BBEA00D9EE58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80244B41DD7BBEA00D9EE58;
+			remoteInfo = TVBuildMonitor;
+		};
+		D898C2D21F59F35400238C40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D80244AD1DD7BBEA00D9EE58 /* Project object */;
 			proxyType = 1;
@@ -45,6 +54,10 @@
 		D80244D11DD7BBEA00D9EE58 /* TVBuildMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVBuildMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80244D51DD7BBEA00D9EE58 /* TVBuildMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVBuildMonitorUITests.swift; sourceTree = "<group>"; };
 		D80244D71DD7BBEA00D9EE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D898C2CD1F59F35400238C40 /* CircleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D898C2CF1F59F35400238C40 /* CircleAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAPITests.swift; sourceTree = "<group>"; };
+		D898C2D11F59F35400238C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B4D98E1F50D908001ED030 /* CircleCIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCIController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D898C2CA1F59F35400238C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +98,7 @@
 				D80244B71DD7BBEA00D9EE58 /* TVBuildMonitor */,
 				D80244C91DD7BBEA00D9EE58 /* TVBuildMonitorTests */,
 				D80244D41DD7BBEA00D9EE58 /* TVBuildMonitorUITests */,
+				D898C2CE1F59F35400238C40 /* CircleAPITests */,
 				D80244B61DD7BBEA00D9EE58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +109,7 @@
 				D80244B51DD7BBEA00D9EE58 /* TVBuildMonitor.app */,
 				D80244C61DD7BBEA00D9EE58 /* TVBuildMonitorTests.xctest */,
 				D80244D11DD7BBEA00D9EE58 /* TVBuildMonitorUITests.xctest */,
+				D898C2CD1F59F35400238C40 /* CircleAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +122,7 @@
 				D80244BC1DD7BBEA00D9EE58 /* Main.storyboard */,
 				D80244BF1DD7BBEA00D9EE58 /* Assets.xcassets */,
 				D80244C11DD7BBEA00D9EE58 /* Info.plist */,
+				D8B4D98E1F50D908001ED030 /* CircleCIController.swift */,
 			);
 			path = TVBuildMonitor;
 			sourceTree = "<group>";
@@ -120,6 +143,15 @@
 				D80244D71DD7BBEA00D9EE58 /* Info.plist */,
 			);
 			path = TVBuildMonitorUITests;
+			sourceTree = "<group>";
+		};
+		D898C2CE1F59F35400238C40 /* CircleAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				D898C2CF1F59F35400238C40 /* CircleAPITests.swift */,
+				D898C2D11F59F35400238C40 /* Info.plist */,
+			);
+			path = CircleAPITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,27 +210,54 @@
 			productReference = D80244D11DD7BBEA00D9EE58 /* TVBuildMonitorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D898C2CC1F59F35400238C40 /* CircleAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D898C2D41F59F35400238C40 /* Build configuration list for PBXNativeTarget "CircleAPITests" */;
+			buildPhases = (
+				D898C2C91F59F35400238C40 /* Sources */,
+				D898C2CA1F59F35400238C40 /* Frameworks */,
+				D898C2CB1F59F35400238C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D898C2D31F59F35400238C40 /* PBXTargetDependency */,
+			);
+			name = CircleAPITests;
+			productName = CircleAPITests;
+			productReference = D898C2CD1F59F35400238C40 /* CircleAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D80244AD1DD7BBEA00D9EE58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Joe Sturzenegger";
 				TargetAttributes = {
 					D80244B41DD7BBEA00D9EE58 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					D80244C51DD7BBEA00D9EE58 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D80244B41DD7BBEA00D9EE58;
 					};
 					D80244D01DD7BBEA00D9EE58 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D80244B41DD7BBEA00D9EE58;
+					};
+					D898C2CC1F59F35400238C40 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 8498GNCR8T;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D80244B41DD7BBEA00D9EE58;
 					};
@@ -220,6 +279,7 @@
 				D80244B41DD7BBEA00D9EE58 /* TVBuildMonitor */,
 				D80244C51DD7BBEA00D9EE58 /* TVBuildMonitorTests */,
 				D80244D01DD7BBEA00D9EE58 /* TVBuildMonitorUITests */,
+				D898C2CC1F59F35400238C40 /* CircleAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +308,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D898C2CB1F59F35400238C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -255,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B4D98F1F50D908001ED030 /* CircleCIController.swift in Sources */,
 				D80244BB1DD7BBEA00D9EE58 /* MainViewController.swift in Sources */,
 				D80244B91DD7BBEA00D9EE58 /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +344,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D898C2C91F59F35400238C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D898C2D01F59F35400238C40 /* CircleAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +364,11 @@
 			isa = PBXTargetDependency;
 			target = D80244B41DD7BBEA00D9EE58 /* TVBuildMonitor */;
 			targetProxy = D80244D21DD7BBEA00D9EE58 /* PBXContainerItemProxy */;
+		};
+		D898C2D31F59F35400238C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80244B41DD7BBEA00D9EE58 /* TVBuildMonitor */;
+			targetProxy = D898C2D21F59F35400238C40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -312,7 +393,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -320,7 +403,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -347,6 +435,7 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -361,7 +450,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -369,7 +460,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,6 +484,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
@@ -403,7 +500,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -416,7 +514,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -429,7 +528,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVBuildMonitor.app/TVBuildMonitor";
 			};
 			name = Debug;
@@ -443,7 +543,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVBuildMonitor.app/TVBuildMonitor";
 			};
 			name = Release;
@@ -456,7 +557,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TVBuildMonitor;
 			};
 			name = Debug;
@@ -469,8 +571,51 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.TVBuildMonitorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TVBuildMonitor;
+			};
+			name = Release;
+		};
+		D898C2D51F59F35400238C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8498GNCR8T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CircleAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.CircleAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVBuildMonitor.app/TVBuildMonitor";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		D898C2D61F59F35400238C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8498GNCR8T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CircleAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joe-Sturzenegger.CircleAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVBuildMonitor.app/TVBuildMonitor";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -509,6 +654,15 @@
 			buildConfigurations = (
 				D80244E11DD7BBEA00D9EE58 /* Debug */,
 				D80244E21DD7BBEA00D9EE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D898C2D41F59F35400238C40 /* Build configuration list for PBXNativeTarget "CircleAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D898C2D51F59F35400238C40 /* Debug */,
+				D898C2D61F59F35400238C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

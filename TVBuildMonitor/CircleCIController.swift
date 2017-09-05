@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class CircleCIController {
+  
+  static func makeCallForData (String :String) -> String{
+    return "here"
+  }
+  
+}
